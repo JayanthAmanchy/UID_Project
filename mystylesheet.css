@@ -1,0 +1,101 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default (Mobile First) */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #25bf93, #feb47b);
+    color: #333;
+}
+
+/* Profile Image */
+img {
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Sections look like cards */
+h2, p, ul {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 5px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #ff4e50;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+    body {
+        background: linear-gradient(135deg, #3e5f37, #5b86e5);
+        font-size: 16px;
+    }
+
+    h2, p, ul {
+        max-width: 700px;
+    }
+}
+
+/* Laptop/Desktop View */
+@media (min-width: 1024px) {
+    body {
+        background: linear-gradient(135deg, #ad1010, #243b55);
+        color: #f0f0f0;
+        font-size: 18px;
+    }
+
+    h2, p, ul {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        backdrop-filter: blur(8px);
+        max-width: 800px;
+    }
+
+    a {
+        color: #ffd700;
+    }
+}
+
+/* Small Mobile Fix */
+@media (max-width: 480px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

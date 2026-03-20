@@ -1,0 +1,100 @@
+/* Default Variables (Mobile First) */
+:root {
+    --bg-gradient: linear-gradient(135deg, #ff4e50, #f9d423);
+    --text-color: black;
+    --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* Mobile (default) */
+body {
+    font-size: 14px;
+    font-family: Arial;
+    margin: 0;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    :root {
+        --bg-gradient: linear-gradient(135deg, #36d1dc, #5b86e5);
+        --text-color: black;
+        --card-bg: rgba(255, 255, 255, 0.85);
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Laptop/Desktop */
+@media (min-width: 1024px) {
+    :root {
+        --bg-gradient: linear-gradient(135deg, #141e30, #243b55);
+        --text-color: #f0f0f0;
+        --card-bg: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Section */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Project Cards */
+.project {
+    background: var(--card-bg);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Nav for Mobile */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+}
